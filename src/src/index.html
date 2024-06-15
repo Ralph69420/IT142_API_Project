@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Search App</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="banner">
+        <h1><a class="a" href="index.html">Anime Search App</a></h1>
+        <p>Discover your favorite anime series.</p>
+    
+        <form class="search-bar" id="form">
+            <input autocomplete="off" type="search" class="search-input"
+                placeholder="Search for anime series..." id="anime-name" name="anime-name" required>
+            <button class="search-btn" id="search-btn" type="button" onclick="getSearch()">Search</button>
+        </form>
+
+        <form class="anime-season" id="anime-season">
+            <input type="number" id="year" name="year" min="1950" max="2030" value="2024">
+            <select id="season" name="season">
+                <option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+            </select>
+            <button class="search-btn" type="button" onclick="getSeasonal()">Go</button>
+        </form>
+    </header>
+    
+    <!-- Featured Anime Section -->
+    <section class="featured-anime">
+        
+        <div id="anime-list">
+            <!--Inserts the results into here-->
+        </div>
+
+    </section>
+
+        
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
